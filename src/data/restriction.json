@@ -230,7 +230,7 @@
 
 	{
 		"id": "tableau-active",
-		"display": "Tableau Device Sharing - 50% and above",
+		"display": "Tableau Device Sharing: 50% and above",
 		"description": "If Shared Device Last GeoLocation Date is more recent vs. Last Manual Withdrawal Date/Time (or Last Manual Withdrawal Date/Time is NULL) and Percentage for last and third columns are both equal or above 50% (Active, Suspended, Closed, TimeOut)",
 		"escalation": "device sharing with [slot1]",
 		"additionalDesc": "Account numbers",
