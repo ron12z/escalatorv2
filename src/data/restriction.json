@@ -236,7 +236,8 @@
 		"additionalDesc": "Account numbers",
 		"slot1": {
 			"Account Number": 1,
-			"addMoreButton": true
+			"addMoreButton": true,
+			"hasStatusOption": true
 		}
 	}
 ]
