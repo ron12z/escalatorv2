@@ -73,11 +73,11 @@
 	{
 		"id": "sa2",
 		"display": "Suspicious Activity 2",
-		"description": "Suspicious Activity 2 - Customer has attempted to deposit with multiple debit cards in the past 24 hours (3 for first escalation, 2 if already escalated before)",
+		"description": "Suspicious Activity 2 - Customer has attempted to deposit with multiple debit cards in the past 24 hours (at least 5 new cards)",
 		"escalation": "customer has attempted to deposit with multiple debit cards in the past 24 hours - [slot1]",
 		"additionalDesc": "Debit Cards Used",
 		"slot1": {
-			"Card Number": 2,
+			"Card Number": 5,
 			"addMoreButton": true
 		}
 	},
