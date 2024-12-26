@@ -114,7 +114,7 @@
 		"id": "licensed-state",
 		"display": "Licensed State (PA, WV, NJ)",
 		"description": "Licensed State (PA, WV, NJ)",
-		"escalation": "([option]) Account, no license",
+		"escalation": "[option] Account, no license",
 		"additionalDesc": "State",
 		"options": {
 			"PA": "PA",
