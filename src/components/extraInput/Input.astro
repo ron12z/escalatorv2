@@ -17,6 +17,7 @@ const placeholder = slotDetails[0][0];
 const count = slotDetails[0][1];
 const addMoreBtn = slotRole.addMoreButton;
 const hasStatusOption = slotRole.hasStatusOption;
+const preset = slotRole.preset;
 const placeholdercounter = counter();
 ---
 
@@ -28,6 +29,7 @@ const placeholdercounter = counter();
 						<input
 							type="text"
 							data-special={hasStatusOption ? "true" : "false"}
+							data-preset={preset}
 							placeholder={`${placeholder} ${placeholdercounter()}`}
 						/>
 						<SpecialChoicesButtons />
@@ -38,6 +40,7 @@ const placeholdercounter = counter();
 						<input
 							type="text"
 							data-special={hasStatusOption ? "true" : "false"}
+							data-preset={preset}
 							placeholder={`${placeholder} ${placeholdercounter()}`}
 						/>
 					</div>

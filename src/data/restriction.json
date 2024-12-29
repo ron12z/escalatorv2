@@ -237,7 +237,36 @@
 		"slot1": {
 			"Account Number": 1,
 			"addMoreButton": true,
-			"hasStatusOption": true
+			"hasStatusOption": true,
+			"preset": "[value] ([option])"
+		}
+	},
+
+	{
+		"id": "tableau-null",
+		"display": "Tableau Device Sharing: Null + Closed/Suspended",
+		"description": "If Shared Device Last GeoLocation Date is NULL and sharing with CLOSED or SUSPENDED account",
+		"escalation": "sharing with [slot1]",
+		"additionalDesc": "Account numbers",
+		"slot1": {
+			"Account Number": 1,
+			"addMoreButton": true,
+			"hasStatusOption": true,
+			"preset": "[option] account [value]"
+		}
+	},
+
+	{
+		"id": "tablue-many",
+		"display": "Tableau Device Sharing: 4+ accounts",
+		"description": "If there are at least 4 accounts that needs to be escalated based on tableau",
+		"escalation": "device sharing with [slot1] accounts",
+		"additionalDesc": "Number of accounts and status",
+		"slot1": {
+			"Number of Accounts": 1,
+			"addMoreButton": true,
+			"hasStatusOption": true,
+			"preset": "[value] [option]"
 		}
 	}
 ]

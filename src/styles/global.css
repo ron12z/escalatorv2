@@ -66,18 +66,17 @@ input:focus {
 		flex-grow: 1;
 
 		&:hover {
-			background: green;
-		}
-
-		&:focus {
-			background: green;
-			outline: 1px solid rgb(91, 199, 91);
+			outline: 2px solid rgb(171, 238, 171);
 		}
 
 		&:active {
 			position: relative;
 			top: 3px;
 		}
+	}
+
+	& .active {
+		background: rgb(42, 126, 42);
 	}
 }
 

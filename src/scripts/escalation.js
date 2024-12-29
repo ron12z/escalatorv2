@@ -26,19 +26,6 @@ function formatInputs(result) {
 
 // Use this in event's listener of selection, choices, and input fields
 export function addEscalation(id) {
-	function getInputFieldContents(slotGroup) {
-		const allInputFields = slotGroup.querySelectorAll("input");
-		let result = [];
-
-		allInputFields.forEach((input) => {
-			if (input.value) {
-				result.push(input.value.trim());
-			}
-		});
-
-		return result;
-	}
-
 	const restriction = document.querySelector(`#${id}`);
 	const linkedExtra = document.querySelector(`#${id}-extra`);
 	const escalation = restriction.getAttribute("data-escalation");
@@ -76,7 +63,13 @@ export function addEscalation(id) {
 
 				allInputFields.forEach((input) => {
 					if (input.value) {
-						result.push(input.value.trim());
+						if (
+							input.getAttribute("data-special") == "true" &&
+							input.getAttribute("data-value")
+						) {
+							result.push(input.getAttribute("data-value").trim());
+						} else if (input.getAttribute("data-special") != "true")
+							result.push(input.value.trim());
 					}
 				});
 			}
@@ -172,6 +165,51 @@ export function updateResult() {
 	setEscalationHandler();
 }
 
+function findNextSpecialButton(currentElement) {
+	// Start from the current element
+	let element = currentElement;
+
+	// Loop through the DOM tree
+	while (element) {
+		// Check for the next sibling
+		if (element.nextElementSibling) {
+			element = element.nextElementSibling;
+
+			// If the next sibling has the target class, return it
+			if (element.classList.contains("special-buttons")) {
+				return element;
+			}
+
+			// If not, look inside the sibling for nested matches
+			const nestedMatch = element.querySelector(".special-buttons");
+			if (nestedMatch) {
+				return nestedMatch;
+			}
+		} else {
+			// Move up to the parent's next sibling
+			element = element.parentElement;
+
+			if (element && element.nextElementSibling) {
+				element = element.nextElementSibling;
+
+				// Check if this new sibling has the target class
+				if (element.classList.contains("special-buttons")) {
+					return element;
+				}
+
+				// Check for nested matches
+				const nestedMatch = element.querySelector(".special-buttons");
+				if (nestedMatch) {
+					return nestedMatch;
+				}
+			}
+		}
+	}
+
+	// Return null if no matching element is found
+	return null;
+}
+
 function inputFieldEventHandler(event) {
 	const inputField = event.currentTarget;
 
@@ -179,6 +217,22 @@ function inputFieldEventHandler(event) {
 		.closest(".additional-input")
 		.getAttribute("id")
 		.replace("-extra", "");
+
+	const preset = inputField.getAttribute("data-preset");
+
+	if (preset) {
+		const active = findNextSpecialButton(inputField)
+			.querySelector(".active")
+			.getAttribute("data-value");
+
+		const afterPreset = preset
+			.replace("[value]", inputField.value.trim())
+			.replace("[option]", active.trim());
+
+		inputField.setAttribute("data-value", afterPreset);
+	} else {
+		inputField.setAttribute("data-value", inputField.value.trim());
+	}
 
 	addEscalation(id);
 	updateResult();

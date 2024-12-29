@@ -32,6 +32,14 @@ export default function activateSpecialButtons() {
 		const valuesList = ["(Open)", "(Suspended)", "(Closed)", "(Timeout)"];
 
 		button.addEventListener("click", () => {
+			// To mark the active button
+			const buttonsGroup = button.parentElement.querySelectorAll("button");
+			buttonsGroup.forEach((button) => {
+				button.classList.remove("active");
+			});
+			button.classList.add("active");
+
+			// Getting the ID for adding escalation
 			const id = button
 				.closest(".additional-input")
 				.getAttribute("id")
@@ -43,13 +51,16 @@ export default function activateSpecialButtons() {
 				target = target.querySelector("input");
 			}
 
-			const prevValue = target.value;
-			if (hasStatusAlready(prevValue)) {
-				valuesList.forEach((oldValue) => {
-					target.value = target.value.replace(oldValue, value);
-				});
+			const preset = target.getAttribute("data-preset");
+
+			if (preset) {
+				const afterPreset = preset
+					.replace("[value]", target.value.trim())
+					.replace("[option]", value.trim());
+				console.log(afterPreset);
+				target.setAttribute("data-value", afterPreset);
 			} else {
-				target.value += ` ${value}`;
+				target.setAttribute("data-value", `${target.value} ${value}`);
 			}
 
 			// AddEscalation

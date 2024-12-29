@@ -14,6 +14,7 @@ addMoreBtns.forEach((button) => {
 		const parentSlot = parent.getAttribute("data-slot");
 		const allInputElements = parent.querySelectorAll("input");
 		const lastInputElement = allInputElements[allInputElements.length - 1];
+		const lastInputElementPreset = lastInputElement.getAttribute("data-preset");
 		const placeholder = lastInputElement.getAttribute("placeholder");
 		const placeholderSplit = placeholder.split(" ");
 		const placeholderText = placeholderSplit.slice(0, -1).join(" ");
@@ -31,6 +32,7 @@ addMoreBtns.forEach((button) => {
 		const newField = document.createElement("input");
 		newField.setAttribute("data-slot", parentSlot);
 		newField.setAttribute("placeholder", newElementPlaceholder);
+		newField.setAttribute("data-preset", lastInputElementPreset);
 		Escalation.addInputEventHandler(newField);
 		newField.type = "text";
 
@@ -62,23 +64,23 @@ addMoreBtns.forEach((button) => {
 			statusLabel.textContent = "Status:";
 
 			const buttonOpen = document.createElement("button");
-			buttonOpen.className = "open";
-			buttonOpen.setAttribute("data-value", "(Open)");
+			buttonOpen.className = "open active";
+			buttonOpen.setAttribute("data-value", "open");
 			buttonOpen.textContent = "O";
 
 			const buttonSuspended = document.createElement("button");
 			buttonSuspended.className = "suspended";
-			buttonSuspended.setAttribute("data-value", "(Suspended)");
+			buttonSuspended.setAttribute("data-value", "suspended");
 			buttonSuspended.textContent = "S";
 
 			const buttonClosed = document.createElement("button");
 			buttonClosed.className = "closed";
-			buttonClosed.setAttribute("data-value", "(Closed)");
+			buttonClosed.setAttribute("data-value", "closed");
 			buttonClosed.textContent = "C";
 
 			const buttonTimeout = document.createElement("button");
 			buttonTimeout.className = "timeout";
-			buttonTimeout.setAttribute("data-value", "(Timeout)");
+			buttonTimeout.setAttribute("data-value", "timeout");
 			buttonTimeout.textContent = "T";
 
 			div.appendChild(statusLabel);
