@@ -21,6 +21,11 @@ h4 {
 	}
 }
 
+img {
+	/* margin-inline: auto; */
+	border-radius: 0.5rem;
+}
+
 .updates-list {
 	display: flex;
 	flex-direction: column;

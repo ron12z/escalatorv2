@@ -46,7 +46,7 @@
 		"id": "lost",
 		"display": "Lost/Stolen",
 		"description": "Has lost or stolen failed deposit in the past 7 days",
-		"escalation": "([slot1]) has been reported lost or stolen",
+		"escalation": "[slot1] has been reported lost or stolen",
 		"additionalDesc": "Failed Deposit/s Details",
 		"slot1": {
 			"Account Number": 1,
@@ -183,7 +183,8 @@
 		"slot2": {
 			"Account Number": 1,
 			"addMoreButton": true,
-			"hasStatusOption": true
+			"hasStatusOption": true,
+			"preset": "[value] ([option])"
 		}
 	},
 
@@ -199,7 +200,8 @@
 		"slot2": {
 			"Account Number": 1,
 			"addMoreButton": true,
-			"hasStatusOption": true
+			"hasStatusOption": true,
+			"preset": "[value] ([option])"
 		}
 	},
 

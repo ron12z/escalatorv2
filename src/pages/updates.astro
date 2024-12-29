@@ -1,4 +1,7 @@
 ---
+import { Image } from "astro:assets";
+import ButtonsUpdate from "../files/ButtonsUpdate.png";
+import DecisionTable from "../files/DecisionTable.png";
 import Update from "../components/updateComponents/Update.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 
@@ -10,6 +13,27 @@ const title = "Updates";
 
 <MainLayout title={title}>
 	<div class="updates-list">
+		<Update date="December 29, 2024">
+			<p>
+				Added new restriction "Tableau Device Sharing: Null + Closed/Suspended"
+			</p>
+			<p>Added new restriction "Tableau Device Sharing: 4+ accounts"</p>
+			<p>
+				Changed the way the buttons for account status works - you will not see
+				them in the input field now, but the selected status will still reflect
+				on the escalation note
+
+				<Image src={ButtonsUpdate} alt="Update Sample" />
+			</p>
+			<br />
+
+			<p>
+				I believe that this update can now cover all possible combinations based
+				on our tableau device sharing decision table
+				<Image src={DecisionTable} alt="Decision Table" />
+			</p>
+		</Update>
+
 		<Update date="December 16, 2024">
 			<p>Added new restriction "Tableau Device Sharing: 50% and above"</p>
 		</Update>
