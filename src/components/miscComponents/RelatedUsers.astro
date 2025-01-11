@@ -1,5 +1,5 @@
 ---
-
+import WDCancellationItem from "./WDCancellationItem.astro";
 ---
 
 <div class="text-group" id="approve">
@@ -14,17 +14,24 @@
 			<input type="number" id="unverified" placeholder="Unverified count" />
 			<button id="resetUsers">RESET</button>
 		</div>
-		<div class="flexrow">
-			<div class="clickable">
-				<p id="approve1"></p>
-			</div>
-			<div class="clickable">
-				<p id="approve3"></p>
-			</div>
-			<div class="clickable">
-				<p id="approve2"></p>
-			</div>
-		</div>
+
+		<WDCancellationItem
+			label="Has related users in GeoComply but only unverified and/or duplicate accounts"
+		>
+			<p id="approve1"></p>
+		</WDCancellationItem>
+
+		<WDCancellationItem
+			label="Has related users in GeoComply but no device links in Tableau"
+		>
+			<p id="approve3"></p>
+		</WDCancellationItem>
+
+		<WDCancellationItem
+			label="Has related users in GeoComply but already reviewed by SA"
+		>
+			<p id="approve2"></p>
+		</WDCancellationItem>
 	</div>
 </div>
 

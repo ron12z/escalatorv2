@@ -5,6 +5,8 @@ import RelatedUsers from "../components/miscComponents/RelatedUsers.astro";
 import ForPosting from "../components/miscComponents/ForPosting.astro";
 import WDCancellation from "../components/miscComponents/WDCancellation.astro";
 import FBGCleared from "../components/miscComponents/FBGCleared.astro";
+import WDCancellationItem from "../components/miscComponents/WDCancellationItem.astro";
+import ClickableItem from "../components/miscComponents/ClickableItem.astro";
 
 const title = "Misc";
 ---
@@ -12,6 +14,12 @@ const title = "Misc";
 <MainLayout title={title}>
 	<div class="misc-content">
 		<RelatedUsers />
+		<hr />
+
+		<ClickableItem label="No data in tableau and 0 device 0 user in GeoComply">
+			<p>No data in Tableau and GeoComply. No fraud concerns. WD Approved.</p>
+		</ClickableItem>
+
 		<hr />
 		<ForPosting />
 		<hr />

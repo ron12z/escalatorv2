@@ -128,8 +128,9 @@ button {
 	cursor: pointer;
 
 	& p::after {
-		content: " -Click to copy";
+		content: "-Click to copy";
 		color: #ffffff85;
 		display: inline-block;
+		margin-left: 0.15rem;
 	}
 }

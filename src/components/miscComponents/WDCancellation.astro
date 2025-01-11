@@ -33,8 +33,19 @@ import WDCancellationItem from "./WDCancellationItem.astro";
 
 		<WDCancellationItem label="Status: WITHDRAWAL_COMPLETED">
 			<p>
-				Sorry, we cannot cancel this transaction because it's already in the
+				Sorry, we cannot cancel this transaction because it's already under the
 				status of <b>WITHDRAWAL_COMPLETED</b>. Thank you!
+			</p>
+		</WDCancellationItem>
+
+		<WDCancellationItem
+			label="Status: WITHDRAWAL_PRE_APPROVED AND PAYMENT METHOD IS CASH"
+		>
+			<p>
+				Sorry, we are unable to cancel this withdrawal on our end. However, you
+				can inform the client that they can cancel this withdrawal on their end
+				since it's already under the status of <b>WITHDRAWAL_PRE_APPROVED</b> and
+				the payment method is <b><i>Cash</i></b>. Thank you!
 			</p>
 		</WDCancellationItem>
 
@@ -43,7 +54,7 @@ import WDCancellationItem from "./WDCancellationItem.astro";
 		>
 			<p>
 				The client is withdrawing via trustly and it is under the
-				<b>withdrawal_submitted</b> status. On this case, the client will wait to
+				<b>WITHDRAWAL_SUBMITTED</b> status. On this case, the client will wait to
 				time-out the withdrawal within an hour as it will be cancelled on its own
 				and the funds will be returned to it's account.
 			</p>
