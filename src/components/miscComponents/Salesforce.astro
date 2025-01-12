@@ -104,4 +104,7 @@ import WDCancellationItem from "./WDCancellationItem.astro";
 	["keyup", "keydown", "blur"].forEach((eventType) => {
 		caseNumber.addEventListener(eventType, caseNumberHandler);
 	});
+
+	const init = new Event("blur");
+	caseNumber.dispatchEvent(init);
 </script>
