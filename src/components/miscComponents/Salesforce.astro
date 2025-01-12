@@ -1,0 +1,107 @@
+---
+import WDCancellationItem from "./WDCancellationItem.astro";
+---
+
+<div class="wrapper">
+	<h4>Salesforce Case Slack reply</h4>
+	<div class="case-group">
+		<h5>Case number:</h5>
+		<div class="caseNumber-wrapper">
+			<input type="number" id="caseNumber" placeholder="Case Number" />
+			<button id="caseNumReset">RESET</button>
+		</div>
+	</div>
+
+	<WDCancellationItem label="Name mismatch">
+		<p>
+			Sent name mismatch warning email - SF Case Number <span
+				class="case-number"></span>
+		</p>
+	</WDCancellationItem>
+
+	<WDCancellationItem label="Multi accounting">
+		<p>
+			Sent multi accounting warning - SF Case Number <span class="case-number"
+			></span>
+		</p>
+	</WDCancellationItem>
+
+	<WDCancellationItem label="Device sharing">
+		<p>
+			Sent device sharing warning - SF Case Number <span class="case-number"
+			></span>
+		</p>
+	</WDCancellationItem>
+
+	<WDCancellationItem label="Account closure">
+		<p>
+			Sent account closure email - SF Case Number <span class="case-number"
+			></span>
+		</p>
+	</WDCancellationItem>
+</div>
+
+<hr />
+
+<div class="description-group">
+	<h4>Salesforce descriptions</h4>
+	<WDCancellationItem label="Name mismatch">
+		<p>Sending warning email for name mismatch.</p>
+	</WDCancellationItem>
+
+	<WDCancellationItem label="Multi accounting">
+		<p>Sending warning email for multi accounting.</p>
+	</WDCancellationItem>
+
+	<WDCancellationItem label="Device sharing">
+		<p>Sending warning email for device sharing.</p>
+	</WDCancellationItem>
+
+	<WDCancellationItem label="Account closure">
+		<p>Sending account closure email.</p>
+	</WDCancellationItem>
+</div>
+
+<style>
+	h4 {
+		margin-bottom: 0.5rem;
+	}
+
+	h5 {
+		margin-bottom: 0.3rem;
+	}
+
+	.caseNumber-wrapper {
+		display: flex;
+		gap: 0.5rem;
+	}
+</style>
+
+<script>
+	const caseNumber: HTMLInputElement = document.querySelector("#caseNumber")!;
+	const caseResetBtn = document.querySelector("#caseNumReset")!;
+	const caseSpans = document.querySelectorAll(".case-number");
+	const defaultValue = "xxxxxx";
+
+	caseResetBtn.addEventListener("click", () => {
+		caseNumber.value = "";
+	});
+
+	caseResetBtn.addEventListener("click", caseNumberHandler);
+
+	function caseNumberHandler(event: any) {
+		const caseNum = event.currentTarget.value.trim();
+
+		caseSpans.forEach((span) => {
+			if (caseNum) {
+				span.textContent = caseNum;
+			} else {
+				span.textContent = defaultValue;
+			}
+		});
+	}
+
+	["keyup", "keydown", "blur"].forEach((eventType) => {
+		caseNumber.addEventListener(eventType, caseNumberHandler);
+	});
+</script>
