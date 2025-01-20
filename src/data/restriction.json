@@ -36,6 +36,18 @@
 	},
 
 	{
+		"id": "name2",
+		"display": "Name Mismatch: Subsequent Infraction",
+		"description": "If the client used a name-mismatched payment method that had already received a warning from SA before.",
+		"escalation": "[slot1]'s payment detail was used again after Sr. Agent's review",
+		"additionalDesc": "Name/s In Account",
+		"slot1": {
+			"Name": 1,
+			"addMoreButton": true
+		}
+	},
+
+	{
 		"id": "email",
 		"display": "Email Mismatch",
 		"description": "If there is an email mismatch & the account is less than 1 month old",
@@ -90,10 +102,24 @@
 	},
 
 	{
+		"id": "cashout2",
+		"display": "Cashed out: Subsequent Infraction",
+		"description": "If the client was already warned for cashed out bet before, and has another cashed out bet now.",
+		"escalation": "client has new bet cashed out after Sr. Agent's review"
+	},
+
+	{
 		"id": "short-odds",
 		"display": "Short Odds",
 		"description": "If they have Bet Win with 1 (1.00) - 1.14 Odds in between withdrawal and deposit in question and using different payment method for deposit and withdrawal",
 		"escalation": "short odds bet placement"
+	},
+
+	{
+		"id": "short-odds2",
+		"display": "Short Odds: Subsequent Infraction",
+		"description": "If the client was already warned for short odds bet before, and has another short odds bet now.",
+		"escalation": "client has new short odds bet after Sr. Agent's review"
 	},
 
 	{
@@ -142,6 +168,13 @@
 		"display": "Baccarat Abuse (MI, PA, WV only)",
 		"description": "In  ‘Casino History’ tab you see the total amount of bets to be equal or similar to the payout they are receiving and deposit and withdrawal are two different payment method",
 		"escalation": "baccarat abuse"
+	},
+
+	{
+		"id": "baccarat-abuse2",
+		"display": "Baccarat Abuse: Subsequent Infraction (MI, PA, WV only)",
+		"description": "If the client was already warned for baccarat abuse before, and has another baccarat abuse instance now.",
+		"escalation": "client has new baccarat abuse after Sr. Agent's review"
 	},
 
 	{
