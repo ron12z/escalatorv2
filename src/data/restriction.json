@@ -208,10 +208,10 @@
 		"id": "device-sharing-initial",
 		"display": "Device Sharing: First Escalation",
 		"description": "Device Sharing - If device sharing with any (not already known per NATS or Sift notes) Open, Timeout, Self Exclusion, Suspended or Closed Account.",
-		"escalation": "has [slot1] related users - New device links to [slot2]",
+		"escalation": "[slot1] related devices - New device links to [slot2]",
 		"additionalDesc": "Number of Related Users and Accounts Details",
 		"slot1": {
-			"Related Users": 1
+			"Related Devices": 1
 		},
 		"slot2": {
 			"Account Number": 1,
@@ -225,10 +225,10 @@
 		"id": "device-sharing-next",
 		"display": "Device Sharing: Previously Escalated",
 		"description": "Device Sharing - If there's a new device on the account which is not part of the previous escalation.",
-		"escalation": "now has [slot1] related users - device sharing with new account [slot2]",
+		"escalation": "[slot1] related devices - Device sharing with new account [slot2]",
 		"additionalDesc": "Number of Related Users and Accounts Details",
 		"slot1": {
-			"Related Users": 1
+			"Related Devices": 1
 		},
 		"slot2": {
 			"Account Number": 1,
@@ -242,24 +242,13 @@
 		"id": "device-sharing-four",
 		"display": "Device Sharing: 4+ related users",
 		"description": "Device Sharing - If device sharing with 4+ active, suspended, or closed accounts that are not already known then do not need to include account numbers in notes",
-		"escalation": "has [slot1] related users - [slot2] accounts on devices",
+		"escalation": "[slot1] related devices - [slot2] Open,  Timeout, Self Exclusion, Suspended or Closed accounts on device",
 		"additionalDesc": "Number of Related Users and Number of Linked Devices",
 		"slot1": {
 			"Related Users": 1
 		},
 		"slot2": {
 			"Linked Devices": 1
-		}
-	},
-
-	{
-		"id": "device-sharing-unable",
-		"display": "Device Sharing: Can't search amelco in NATS",
-		"description": "Device Sharing - If unable to view the amelco in NATS probably NJ or PA region",
-		"escalation": "sharing with [slot1] account, unable to view",
-		"additionalDesc": "Client States Info",
-		"slot1": {
-			"Client State": 1
 		}
 	},
 
