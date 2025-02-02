@@ -248,7 +248,9 @@
 			"Related Users": 1
 		},
 		"slot2": {
-			"Linked Devices": 1
+			"Linked Devices": 1,
+			"addMoreButton": true,
+			"hasStatusOption": true
 		}
 	},
 
