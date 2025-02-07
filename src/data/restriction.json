@@ -98,7 +98,14 @@
 		"id": "cashout",
 		"display": "Cashed out",
 		"description": "If they did cash out any bets before the withdrawal and the recent deposit and using different payment method for deposit and withdrawal",
-		"escalation": "cashed out bet before the latest withdrawal"
+		"escalation": "cashed out bet before the latest withdrawal [slot1] and [slot2]",
+		"additionalDesc": "Used Payment Methods",
+		"slot1": {
+			"Deposit Payment Method": 1
+		},
+		"slot2": {
+			"Withdrawal Payment Method": 1
+		}
 	},
 
 	{
@@ -112,7 +119,14 @@
 		"id": "short-odds",
 		"display": "Short Odds",
 		"description": "If they have Bet Win with 1 (1.00) - 1.14 Odds in between withdrawal and deposit in question and using different payment method for deposit and withdrawal",
-		"escalation": "short odds bet placement"
+		"escalation": "short odds bet placement [slot1] and [slot2]",
+		"additionalDesc": "Used Payment Methods",
+		"slot1": {
+			"Deposit Payment Method": 1
+		},
+		"slot2": {
+			"Withdrawal Payment Method": 1
+		}
 	},
 
 	{
@@ -167,7 +181,14 @@
 		"id": "baccarat-abuse",
 		"display": "Baccarat Abuse (MI, PA, WV only)",
 		"description": "In  ‘Casino History’ tab you see the total amount of bets to be equal or similar to the payout they are receiving and deposit and withdrawal are two different payment method",
-		"escalation": "baccarat abuse"
+		"escalation": "baccarat abuse [slot1] and [slot2]",
+		"additionalDesc": "Used Payment Methods",
+		"slot1": {
+			"Deposit Payment Method": 1
+		},
+		"slot2": {
+			"Withdrawal Payment Method": 1
+		}
 	},
 
 	{
