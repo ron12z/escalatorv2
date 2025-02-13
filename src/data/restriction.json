@@ -98,43 +98,18 @@
 		"id": "cashout",
 		"display": "Cashed out",
 		"description": "If they did cash out any bets before the withdrawal and the recent deposit and using different payment method for deposit and withdrawal",
-		"escalation": "cashed out bet before the latest withdrawal ([slot1]) and ([slot2])",
-		"additionalDesc": "Used Payment Methods",
-		"slot1": {
-			"Deposit Payment Method": 1
-		},
-		"slot2": {
-			"Withdrawal Payment Method": 1
-		}
-	},
+		"escalation": "cashed out bet before the latest withdrawal"
 
-	{
-		"id": "cashout2",
-		"display": "Cashed out: Subsequent Infraction",
-		"description": "If the client was already warned for cashed out bet before, and has another cashed out bet now.",
-		"escalation": "client has new bet cashed out after Sr. Agent's review"
 	},
 
 	{
 		"id": "short-odds",
 		"display": "Short Odds",
 		"description": "If they have Bet Win with 1 (1.00) - 1.14 Odds in between withdrawal and deposit in question and using different payment method for deposit and withdrawal",
-		"escalation": "short odds bet placement ([slot1]) and ([slot2])",
-		"additionalDesc": "Used Payment Methods",
-		"slot1": {
-			"Deposit Payment Method": 1
-		},
-		"slot2": {
-			"Withdrawal Payment Method": 1
-		}
+		"escalation": "short odds bet placement"
+
 	},
 
-	{
-		"id": "short-odds2",
-		"display": "Short Odds: Subsequent Infraction",
-		"description": "If the client was already warned for short odds bet before, and has another short odds bet now.",
-		"escalation": "client has new short odds bet after Sr. Agent's review"
-	},
 
 	{
 		"id": "outside-us",
@@ -181,21 +156,8 @@
 		"id": "baccarat-abuse",
 		"display": "Baccarat Abuse (MI, PA, WV only)",
 		"description": "In  ‘Casino History’ tab you see the total amount of bets to be equal or similar to the payout they are receiving and deposit and withdrawal are two different payment method",
-		"escalation": "baccarat abuse ([slot1]) and ([slot2])",
-		"additionalDesc": "Used Payment Methods",
-		"slot1": {
-			"Deposit Payment Method": 1
-		},
-		"slot2": {
-			"Withdrawal Payment Method": 1
-		}
-	},
+		"escalation": "baccarat abuse"
 
-	{
-		"id": "baccarat-abuse2",
-		"display": "Baccarat Abuse: Subsequent Infraction (MI, PA, WV only)",
-		"description": "If the client was already warned for baccarat abuse before, and has another baccarat abuse instance now.",
-		"escalation": "client has new baccarat abuse after Sr. Agent's review"
 	},
 
 	{
