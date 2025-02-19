@@ -99,7 +99,6 @@
 		"display": "Cashed out",
 		"description": "If they did cash out any bets before the withdrawal and the recent deposit and using different payment method for deposit and withdrawal",
 		"escalation": "cashed out bet before the latest withdrawal"
-
 	},
 
 	{
@@ -107,9 +106,7 @@
 		"display": "Short Odds",
 		"description": "If they have Bet Win with 1 (1.00) - 1.14 Odds in between withdrawal and deposit in question and using different payment method for deposit and withdrawal",
 		"escalation": "short odds bet placement"
-
 	},
-
 
 	{
 		"id": "outside-us",
@@ -157,7 +154,6 @@
 		"display": "Baccarat Abuse (MI, PA, WV only)",
 		"description": "In  ‘Casino History’ tab you see the total amount of bets to be equal or similar to the payout they are receiving and deposit and withdrawal are two different payment method",
 		"escalation": "baccarat abuse"
-
 	},
 
 	{
@@ -211,12 +207,13 @@
 		"escalation": "[slot1] related devices - [slot2] accounts on device",
 		"additionalDesc": "Number of Related Users and Number of Linked Devices",
 		"slot1": {
-			"Related Users": 1
+			"Related Devices": 1
 		},
 		"slot2": {
 			"Linked Devices": 1,
 			"addMoreButton": true,
-			"hasStatusOption": true
+			"hasStatusOption": true,
+			"preset": "[value] [option]"
 		}
 	},
 
