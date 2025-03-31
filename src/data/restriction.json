@@ -55,6 +55,13 @@
 	},
 
 	{
+		"id": "emaildomain",
+		"display": "Email + Domain",
+		"description": "If the client has a withdrawal request and the email address looks like these \"oggoooXX@outlook.com\",\"xxxxxxxfrfr@gmail.com\", \"juicyyXXXX@gmail.com \" \"jjuicyyXXXX@gmail.com\", \"gg@gmail.com\"",
+		"escalation": "multiple users using same email+domain"
+	},
+
+	{
 		"id": "lost",
 		"display": "Lost/Stolen",
 		"description": "Has lost or stolen failed deposit in the past 7 days",
