@@ -192,7 +192,7 @@
 
 	{
 		"id": "device-sharing-initial",
-		"display": "GEO Device Sharing",
+		"display": "OpenBet Device Sharing",
 		"description": "Device Sharing - If device sharing with any (not already known per NATS or Sift notes) Open, Timeout, Self Exclusion, Suspended or Closed Account.",
 		"escalation": "[slot1] related devices - New device links to [slot2]",
 		"additionalDesc": "Number of Related Users and Accounts Details",
@@ -209,7 +209,7 @@
 
 	{
 		"id": "device-sharing-four",
-		"display": "GEO Device Sharing: 4+ related users",
+		"display": "OpenBet Device Sharing: 4+ related users",
 		"description": "Device Sharing - If device sharing with 4+ active, suspended, or closed accounts that are not already known then do not need to include account numbers in notes",
 		"escalation": "[slot1] related devices - [slot2] accounts on device",
 		"additionalDesc": "Number of Related Users and Number of Linked Devices",
@@ -222,6 +222,13 @@
 			"hasStatusOption": true,
 			"preset": "[value] [option]"
 		}
+	},
+
+	{
+		"id": "geo-unable",
+		"display": "OpenBet: Unable to check",
+		"description": "If unable to check in OpenBet both in the Map and Activity List especially to the new accounts",
+		"escalation": "unable to check in OpenBet as the map is not working at this time"
 	},
 
 	{
@@ -263,6 +270,19 @@
 			"addMoreButton": true,
 			"hasStatusOption": true,
 			"preset": "[value] [option]"
+		}
+	},
+
+	{
+		"id": "cash-exceed",
+		"display": "CASH: VIP Exceeded",
+		"description": "VIP Client - Exceeded withdrawal for Cash awaiting retail managers approval",
+		"escalation": "for Retail approval - VIP client exceeded [option] cash limit",
+		"additionalDesc": "Amount Limit",
+		"options": {
+			"10k": "10k",
+			"20k": "20k",
+			"25k": "25k"
 		}
 	}
 ]
