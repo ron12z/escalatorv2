@@ -225,13 +225,6 @@
 	},
 
 	{
-		"id": "geo-unable",
-		"display": "OpenBet: Unable to check",
-		"description": "If unable to check in OpenBet both in the Map and Activity List especially to the new accounts",
-		"escalation": "unable to check in OpenBet as the map is not working at this time"
-	},
-
-	{
 		"id": "tableau-active",
 		"display": "Tableau Device Sharing: 50% and above",
 		"description": "If Shared Device Last GeoLocation Date is more recent vs. Last Manual Withdrawal Date/Time (or Last Manual Withdrawal Date/Time is NULL) and Percentage for last and third columns are both equal or above 50% (Active, Suspended, Closed, TimeOut)",
