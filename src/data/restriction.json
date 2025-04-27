@@ -240,7 +240,7 @@
 
 	{
 		"id": "tableau-null",
-		"display": "Tableau Device Sharing: Null + Closed/Suspended",
+		"display": "Tableau Device Sharing: Null + Closed/Suspended/Timeout",
 		"description": "If Shared Device Last GeoLocation Date is NULL and sharing with CLOSED or SUSPENDED account",
 		"escalation": "sharing with [slot1]",
 		"additionalDesc": "Account numbers",
