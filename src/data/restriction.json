@@ -109,10 +109,38 @@
 	},
 
 	{
+		"id": "cashout2",
+		"display": "NEW: Cashed Out",
+		"description": "Has cashed out bet between deposit and withdrawal, and the stake/settlement percentage is equal or less than 15%.",
+		"escalation": "cashed out bet between deposit ([slot1]) and latest withdrawal ([slot2])",
+		"additionalDesc": "Card Details",
+		"slot1": {
+			"Deposit Payment Method": 1
+		},
+		"slot2": {
+			"Withdrawal Payment Method": 1
+		}
+	},
+
+	{
 		"id": "short-odds",
 		"display": "Short Odds",
 		"description": "If they have Bet Win with 1 (1.00) - 1.14 Odds in between withdrawal and deposit in question and using different payment method for deposit and withdrawal",
 		"escalation": "short odds bet placement"
+	},
+
+	{
+		"id": "shortodds2",
+		"display": "NEW: Short Odds",
+		"description": "Short Odds Bet new escalation",
+		"escalation": "short odds bet between deposit ([slot1]) and latest withdrawal ([slot2])",
+		"additionalDesc": "Card Details",
+		"slot1": {
+			"Deposit Payment Method": 1
+		},
+		"slot2": {
+			"Withdrawal Payment Method": 1
+		}
 	},
 
 	{
@@ -161,6 +189,34 @@
 		"display": "Baccarat Abuse (MI, PA, WV only)",
 		"description": "In  ‘Casino History’ tab you see the total amount of bets to be equal or similar to the payout they are receiving and deposit and withdrawal are two different payment method",
 		"escalation": "baccarat abuse"
+	},
+
+	{
+		"id": "bacca2",
+		"display": "NEW: Baccarat Abuse",
+		"description": "Baccarat Abuse new escalation",
+		"escalation": "opposite casino bet between deposit ([slot1]) and latest withdrawal ([slot2])",
+		"additionalDesc": "Card Details",
+		"slot1": {
+			"Deposit Payment Method": 1
+		},
+		"slot2": {
+			"Withdrawal Payment Method": 1
+		}
+	},
+
+	{
+		"id": "sports1",
+		"display": "NEW PROCESS: Sports Market",
+		"description": "Betting both sides of sports markets",
+		"escalation": "cashed out bet between deposit ([slot1]) and latest withdrawal ([slot2])",
+		"additionalDesc": "Card Details",
+		"slot1": {
+			"Deposit Payment Method": 1
+		},
+		"slot2": {
+			"Withdrawal Payment Method": 1
+		}
 	},
 
 	{
