@@ -193,7 +193,7 @@
 
 	{
 		"id": "bacca2",
-		"display": "NEW: Baccarat Abuse",
+		"display": "NEW: Baccarat Abuse (MI, PA, WV only)",
 		"description": "Baccarat Abuse new escalation",
 		"escalation": "opposite casino bet between deposit ([slot1]) and latest withdrawal ([slot2])",
 		"additionalDesc": "Card Details",
