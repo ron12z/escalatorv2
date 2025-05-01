@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import GCashQR from "../files/GCashQR.webp";
+import Rickroll from "../files/haha.gif";
 ---
 
 <footer>
@@ -12,14 +13,17 @@ import GCashQR from "../files/GCashQR.webp";
 		</p>
 	</slot>
 	<p>
-		Want to donate? ➡ <span id="show-QR" class="select-none">Gcash QR</span>
+		Feeling curious? ➡ <span id="show-QR" class="select-none">Click me!</span>
 	</p>
 
 	<div class="donate-info">
 		<!-- <img id="GcashQR" src="/GCashQR.webp" width="300" height="300" /> -->
-		<Image src={GCashQR} alt="GcashQR" width="300" height="300" />
-		<p>I really appreciate it.</p>
-		<p>Thank you so much! 💖</p>
+		<!-- <Image src={GCashQR} alt="GcashQR" width="300" height="300" /> -->
+		<img src={Rickroll.src} alt="Rickroll" width="300" height="300" />
+		<!-- <p>I really appreciate it.</p>
+		<p>Thank you so much! 💖</p> -->
+		<p>Never gonna give you up</p>
+		<p>Never gonna let you down</p>
 	</div>
 </footer>
 
