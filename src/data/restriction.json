@@ -24,6 +24,20 @@
 	},
 
 	{
+		"id": "email",
+		"display": "Email Mismatch",
+		"description": "If there is an email mismatch & the account is less than 1 month old",
+		"escalation": "account less than 1 month old with email name mismatch"
+	},
+
+	{
+		"id": "emaildomain",
+		"display": "Email + Domain",
+		"description": "If the client has a withdrawal request and the email address looks like these \"oggoooXX@outlook.com\", \"gg@gmail.com\", \"ggXX@gmail.com\", \"firstplaceteaXX@gmail.com\"",
+		"escalation": "multiple users using same email+domain"
+	},
+	
+	{
 		"id": "sa1",
 		"display": "Suspicious Activity 1",
 		"description": "Suspicious Activity 1 - Withdrawing to a payment method used for a small deposit with larger deposits made with other payment method/s",
@@ -124,20 +138,6 @@
 			"Account Number": 1,
 			"addMoreButton": true
 		}
-	},
-
-	{
-		"id": "email",
-		"display": "Email Mismatch",
-		"description": "If there is an email mismatch & the account is less than 1 month old",
-		"escalation": "account less than 1 month old with email name mismatch"
-	},
-
-	{
-		"id": "emaildomain",
-		"display": "Email + Domain",
-		"description": "If the client has a withdrawal request and the email address looks like these \"oggoooXX@outlook.com\", \"gg@gmail.com\", \"ggXX@gmail.com\", \"firstplaceteaXX@gmail.com\"",
-		"escalation": "multiple users using same email+domain"
 	},
 
 	{
