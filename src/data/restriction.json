@@ -186,7 +186,7 @@
 		"id": "device-sharing-initial",
 		"display": "OpenBet Device Sharing",
 		"description": "Device Sharing - If device sharing with any (not already known per NATS or Sift notes) Open, Timeout, Self Exclusion, Suspended or Closed Account.",
-		"escalation": "[slot1] related devices - New device links to [slot2]",
+		"escalation": "has [slot1] related devices - New device links to [slot2]",
 		"additionalDesc": "Number of Related Users and Accounts Details",
 		"slot1": {
 			"Related Devices": 1
@@ -203,7 +203,7 @@
 		"id": "device-sharing-four",
 		"display": "OpenBet Device Sharing: 4+ related users",
 		"description": "Device Sharing - If device sharing with 4+ active, suspended, or closed accounts that are not already known then do not need to include account numbers in notes",
-		"escalation": "[slot1] related devices - [slot2] accounts on device",
+		"escalation": "has [slot1] related devices - [slot2] accounts on device",
 		"additionalDesc": "Number of Related Users and Number of Linked Devices",
 		"slot1": {
 			"Related Devices": 1
