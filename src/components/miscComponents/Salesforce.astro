@@ -23,13 +23,24 @@ import WDCancellationItem from "./WDCancellationItem.astro";
 		</p>
 	</WDCancellationItem>
 
-	<!-- Multi accounting -->
-	<WDCancellationItem label="Multi accounting">
-		<p>Sending warning email for multi accounting.</p>
+		<!-- Account closure -->
+	<WDCancellationItem label="Account closure">
+		<p>Sending account closure email.</p>
 	</WDCancellationItem>
 	<WDCancellationItem>
 		<p>
-			Sent multi accounting warning - SF Case Number <span class="case-number"
+			Sent account closure email - SF Case Number <span class="case-number"
+			></span>
+		</p>
+	</WDCancellationItem>
+
+			<!-- Account closure -->
+	<WDCancellationItem label="Deposit refunded (not winnings)">
+		<p>Sending warning for fraud deposit refunded.</p>
+	</WDCancellationItem>
+	<WDCancellationItem>
+		<p>
+			Sent fraud deposit refunded warning - SF Case Number <span class="case-number"
 			></span>
 		</p>
 	</WDCancellationItem>
@@ -45,16 +56,7 @@ import WDCancellationItem from "./WDCancellationItem.astro";
 		</p>
 	</WDCancellationItem>
 
-	<!-- Account closure -->
-	<WDCancellationItem label="Account closure">
-		<p>Sending account closure email.</p>
-	</WDCancellationItem>
-	<WDCancellationItem>
-		<p>
-			Sent account closure email - SF Case Number <span class="case-number"
-			></span>
-		</p>
-	</WDCancellationItem>
+
 
 	<!-- Payment method sharing -->
 	<WDCancellationItem label="Payment method sharing">
@@ -64,6 +66,17 @@ import WDCancellationItem from "./WDCancellationItem.astro";
 		<p>
 			Sent payment method and device sharing warning - SF Case Number <span
 				class="case-number"></span>
+		</p>
+	</WDCancellationItem>
+
+		<!-- Multi accounting -->
+	<WDCancellationItem label="Multi accounting">
+		<p>Sending warning email for multi accounting.</p>
+	</WDCancellationItem>
+	<WDCancellationItem>
+		<p>
+			Sent multi accounting warning - SF Case Number <span class="case-number"
+			></span>
 		</p>
 	</WDCancellationItem>
 </div>
