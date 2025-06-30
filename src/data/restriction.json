@@ -123,7 +123,7 @@
 		"id": "sports1",
 		"display": "Sports Market Abuse",
 		"description": "Betting both sides of sports markets",
-		"escalation": "betting both sides of sports markets (Bet ID: [slot1] - [slot2])",
+		"escalation": "betting both sides of sports markets (Latest Bet ID: [slot1] - [slot2])",
 		"additionalDesc": "Bet ID",
 		"slot1": {
 			"First Bet": 1
