@@ -1,5 +1,10 @@
 [
 	{
+		"id": "Promo",
+		"name": "Vip Promo Pends"
+	},
+
+	{
 		"id": "VIPL",
 		"name": "Vip Withdrawal- Licensed States"
 	},
