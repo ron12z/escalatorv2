@@ -84,9 +84,9 @@ addMoreBtns.forEach((button) => {
 			buttonTimeout.textContent = "T";
 
 			const buttonVerify = document.createElement("button");
-			buttonTimeout.className = "verify";
-			buttonTimeout.setAttribute("data-value", "Requires_ID_Verification");
-			buttonTimeout.textContent = "ID";
+			buttonVerify.className = "verify";
+			buttonVerify.setAttribute("data-value", "Requires_ID_Verification");
+			buttonVerify.textContent = "ID";
 
 			div.appendChild(statusLabel);
 			div.appendChild(buttonOpen);
