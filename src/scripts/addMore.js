@@ -65,29 +65,36 @@ addMoreBtns.forEach((button) => {
 
 			const buttonOpen = document.createElement("button");
 			buttonOpen.className = "open active";
-			buttonOpen.setAttribute("data-value", "open");
+			buttonOpen.setAttribute("data-value", "Open");
 			buttonOpen.textContent = "O";
 
 			const buttonSuspended = document.createElement("button");
 			buttonSuspended.className = "suspended";
-			buttonSuspended.setAttribute("data-value", "suspended");
+			buttonSuspended.setAttribute("data-value", "Suspended");
 			buttonSuspended.textContent = "S";
 
 			const buttonClosed = document.createElement("button");
 			buttonClosed.className = "closed";
-			buttonClosed.setAttribute("data-value", "closed");
+			buttonClosed.setAttribute("data-value", "Closed");
 			buttonClosed.textContent = "C";
 
 			const buttonTimeout = document.createElement("button");
 			buttonTimeout.className = "timeout";
-			buttonTimeout.setAttribute("data-value", "timeout");
+			buttonTimeout.setAttribute("data-value", "Timeout");
 			buttonTimeout.textContent = "T";
+
+			const buttonVerify = document.createElement("button");
+			buttonTimeout.className = "verify";
+			buttonTimeout.setAttribute("data-value", "Requires_ID_Verification");
+			buttonTimeout.textContent = "ID";
 
 			div.appendChild(statusLabel);
 			div.appendChild(buttonOpen);
 			div.appendChild(buttonSuspended);
 			div.appendChild(buttonClosed);
 			div.appendChild(buttonTimeout);
+			div.appendChild(buttonVerify);
+
 
 			fieldContainer.appendChild(div); // Append instead of innerHTML
 		} else {

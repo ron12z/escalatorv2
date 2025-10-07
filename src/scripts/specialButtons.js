@@ -24,12 +24,12 @@ function hasStatusAlready(string) {
 
 export default function activateSpecialButtons() {
 	const specialButtons = document.querySelectorAll(
-		"button.open, button.suspended, button.closed, button.timeout"
+		"button.open, button.suspended, button.closed, button.timeout, button.verify"
 	);
 
 	specialButtons.forEach((button) => {
 		const value = button.getAttribute("data-value");
-		const valuesList = ["(Open)", "(Suspended)", "(Closed)", "(Timeout)"];
+		const valuesList = ["(Open)", "(Suspended)", "(Closed)", "(Timeout)", "(Requires_ID_Verification)"];
 
 		button.addEventListener("click", () => {
 			// To mark the active button
