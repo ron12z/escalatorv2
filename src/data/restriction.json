@@ -84,10 +84,12 @@
 		"escalation": "cashed out bet between deposit ([slot1]) and latest withdrawal ([slot2])",
 		"additionalDesc": "Card Details",
 		"slot1": {
-			"Deposit Payment Method": 1
+			"Deposit Payment Method": 1,
+			"addMoreButton": true
 		},
 		"slot2": {
-			"Withdrawal Payment Method": 1
+			"Withdrawal Payment Method": 1,
+			"addMoreButton": true
 		}
 	},
 
@@ -98,10 +100,12 @@
 		"escalation": "short odds bet between deposit ([slot1]) and latest withdrawal ([slot2])",
 		"additionalDesc": "Card Details",
 		"slot1": {
-			"Deposit Payment Method": 1
+			"Deposit Payment Method": 1,
+			"addMoreButton": true
 		},
 		"slot2": {
-			"Withdrawal Payment Method": 1
+			"Withdrawal Payment Method": 1,
+			"addMoreButton": true
 		}
 	},
 
@@ -112,10 +116,12 @@
 		"escalation": "opposite casino bet between deposit ([slot1]) and latest withdrawal ([slot2])",
 		"additionalDesc": "Card Details",
 		"slot1": {
-			"Deposit Payment Method": 1
+			"Deposit Payment Method": 1,
+			"addMoreButton": true
 		},
 		"slot2": {
-			"Withdrawal Payment Method": 1
+			"Withdrawal Payment Method": 1,
+			"addMoreButton": true
 		}
 	},
 
