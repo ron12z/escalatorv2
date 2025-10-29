@@ -244,6 +244,7 @@
 		"options": {
 			"Suspended": "suspended",
 			"Closed": "closed",
+			"Unverified": "unverified",
 			"Requires ID Verification": "requires ID Verification"
 		}
 	},
