@@ -126,6 +126,13 @@
 	},
 
 	{
+		"id": "tdbank",
+		"display": "TDBank Deposit",
+		"description": "If the client used TD Bank to deposit within 7 days and is withdrawing to a different payment method",
+		"escalation": "TD Bank Deposit within last 7 days with withdrawal to different bank"
+	},
+
+	{
 		"id": "sports1",
 		"display": "Sports Market Abuse",
 		"description": "Using a free bet/bonus money for one outcome or every outcome of the game/match\n1. Moneyline/Winner/Moneyline 3 way\n2. Over/Under total points/runs/goals\n3. Spreads\n4. Parlays",
@@ -268,6 +275,14 @@
 		"description": "Account has no initial deposit and winnings NOT from free bet or PB Migrated funds",
 		"escalation": "no intial deposit"
 	},
+
+	{
+		"id": "freebet-winnings",
+		"display": "Winnings from Free Bet",
+		"description": "IF the account/client is PBmigrated and has no initial deposit to the Fanatics account then uses a free bet for their bet",
+		"escalation": "no initial deposit - Winnings from Free Bets"
+	},
+
 
 	{
 		"id": "no-permission",
