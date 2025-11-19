@@ -129,7 +129,7 @@
 		"id": "tdbank",
 		"display": "TDBank Deposit",
 		"description": "If the client used TD Bank to deposit within 7 days and is withdrawing to a different payment method",
-		"escalation": "TD Bank Deposit within last 7 days with withdrawal to different bank"
+		"escalation": "TD Bank deposit within last 7 days with withdrawal to different bank"
 	},
 
 	{
@@ -199,7 +199,7 @@
 		"id": "emailduck",
 		"display": "Duck Email",
 		"description": "Using a specific email to create an account and taking advantage of the promotional free bets",
-		"escalation": "potential Promo Abuse & Email Name Mismatch"
+		"escalation": "potential promo abuse & email name mismatch"
 	},
 
 	{
