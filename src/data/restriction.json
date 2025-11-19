@@ -196,6 +196,13 @@
 	},
 
 	{
+		"id": "emailduck",
+		"display": "Duck Email",
+		"description": "Using a specific email to create an account and taking advantage of the promotional free bets",
+		"escalation": "potential Promo Abuse & Email Name Mismatch"
+	},
+
+	{
 		"id": "device-sharing-initial",
 		"display": "OpenBet Device Sharing",
 		"description": "Device Sharing - If device sharing with any (not already known per NATS or Sift notes) Open, Timeout, Self Exclusion, Requires ID Verification, Suspended or Closed Account.",
