@@ -264,19 +264,6 @@
 	},
 
 	{
-		"id": "licensed-state",
-		"display": "Licensed State (PA, WV, NJ)",
-		"description": "Licensed State (PA, WV, NJ)",
-		"escalation": "[option] Account, no license",
-		"additionalDesc": "State",
-		"options": {
-			"PA": "PA",
-			"WV": "WV",
-			"NJ": "NJ"
-		}
-	},
-
-	{
 		"id": "no-initial-deposit",
 		"display": "No initial deposit",
 		"description": "Account has no initial deposit and winnings NOT from free bet or PB Migrated funds",
@@ -298,23 +285,10 @@
 		"escalation": "[slot1] client withdrawing to [slot2], no permission to open in NATS",
 		"additionalDesc": "Client States Info",
 		"slot1": {
-			"Client State": 1
+			"Client State (NJ)": 1
 		},
 		"slot2": {
-			"Withdrawing to: (PA/WV)": 1
-		}
-	},
-
-	{
-		"id": "nj-client",
-		"display": "NJ Client withdrawing to Licensed State",
-		"description": "NJ Client is withdrawing on a Licensed state such as PA/WV/NJ",
-		"escalation": "NJ Client withdrawing in [option] - No License",
-		"additionalDesc": "Client Withdrawal State",
-		"options": {
-			"PA": "PA",
-			"WV": "WV",
-			"NJ": "NJ"
+			"Withdrawing to: (Withdrawal State)": 1
 		}
 	}
 ]
