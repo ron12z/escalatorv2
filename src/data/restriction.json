@@ -134,7 +134,7 @@
 
 	{
 		"id": "sports1",
-		"display": "Sports Market Abuse",
+		"display": "Sports Market Abuse (Opposite Betting)",
 		"description": "Same event + same market with different selections within 24 hours and using different payment method for Withdrawal and Deposit",
 		"escalation": "betting both sides of sports market (Latest Bet ID: [slot1] - [slot2])",
 		"additionalDesc": "Bet ID",
