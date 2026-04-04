@@ -12,6 +12,13 @@
 	},
 
 	{
+		"id": "phones",
+		"display": "Multiple Phone Numbers",
+		"description": "Account is less then a month old AND has 2 or more phone number OR one phone number in Sift but has history of phone number change in NATS",
+		"escalation": "2 different phone numbers"
+	},
+
+	{
 		"id": "name2",
 		"display": "Name Mismatch: Subsequent Infraction",
 		"description": "If the client used a name-mismatched payment method that had already received a warning from SA before.",
