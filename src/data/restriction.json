@@ -43,7 +43,7 @@
 		"description": "If the client has a withdrawal request and the email address looks like these \"oggoooXX@outlook.com\", \"gg@gmail.com\", \"ggXX@gmail.com\", \"firstplaceteaXX@gmail.com\"",
 		"escalation": "multiple users using same email+domain"
 	},
-	
+
 	{
 		"id": "lost",
 		"display": "Lost/Stolen",
@@ -55,7 +55,7 @@
 			"addMoreButton": true
 		}
 	},
-	
+
 	{
 		"id": "sa1",
 		"display": "Suspicious Activity 1",
@@ -203,13 +203,6 @@
 	},
 
 	{
-		"id": "emailduck",
-		"display": "Duck Email",
-		"description": "Using a specific email to create an account and taking advantage of the promotional free bets",
-		"escalation": "potential promo abuse & email name mismatch"
-	},
-
-	{
 		"id": "device-sharing-initial",
 		"display": "OpenBet Device Sharing",
 		"description": "Device Sharing - If device sharing with any (not already known per NATS or Sift notes) Open, Timeout, Self Exclusion, Requires ID Verification, Suspended or Closed Account.",
@@ -276,14 +269,6 @@
 		"description": "Account has no initial deposit and winnings NOT from free bet or PB Migrated funds",
 		"escalation": "no intial deposit"
 	},
-
-	{
-		"id": "freebet-winnings",
-		"display": "Winnings from Free Bet",
-		"description": "IF the account/client is PBmigrated and has no initial deposit to the Fanatics account then uses a free bet for their bet",
-		"escalation": "no initial deposit - Winnings from Free Bets"
-	},
-
 
 	{
 		"id": "no-permission",
