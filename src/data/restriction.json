@@ -31,6 +31,21 @@
 	},
 
 	{
+		"id": "name3",
+		"display": "Name Mismatch: Subsequent Infraction with Different Card",
+		"description": "If the client used a name-mismatched payment method that had already received a warning from SA before, using different payment method",
+		"escalation": "[slot1]'s payment detail was used again w/ new payment method [slot2] after Sr. Agent's review",
+		"additionalDesc": "Name and Payment Method",
+		"slot1": {
+			"Name": 1
+		},
+		"slot2": {
+			"Payment Method": 1,
+			"addMoreButton": true
+		}
+	},
+
+	{
 		"id": "email",
 		"display": "Email Mismatch",
 		"description": "If there is an email mismatch & the account is less than 1 month old",
