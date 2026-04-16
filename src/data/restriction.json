@@ -118,8 +118,8 @@
 
 	{
 		"id": "bacca",
-		"display": "Baccarat Abuse (MI, PA, WV only)",
-		"description": "There is a BACCARAT bet in Casino History with same Amount and Payout",
+		"display": "Baccarat/Roullete Abuse (MI, PA, WV only)",
+		"description": "There is a BACCARAT/ROULETTE bet in Casino History with same Amount and Payout",
 		"escalation": "opposite casino bet between deposit ([slot1]) and latest withdrawal ([slot2])",
 		"additionalDesc": "Card Details",
 		"slot1": {
@@ -130,13 +130,6 @@
 			"Withdrawal Payment Method": 1,
 			"addMoreButton": true
 		}
-	},
-
-	{
-		"id": "tdbank",
-		"display": "TDBank Deposit",
-		"description": "If the client used TD Bank to deposit within 7 days and is withdrawing to a different payment method",
-		"escalation": "TD Bank deposit within last 7 days with withdrawal to different bank"
 	},
 
 	{

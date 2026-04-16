@@ -23,7 +23,7 @@ import WDCancellationItem from "./WDCancellationItem.astro";
 		</p>
 	</WDCancellationItem>
 
-		<!-- Account closure -->
+	<!-- Account closure -->
 	<WDCancellationItem label="Account closure">
 		<p>Sending warning for account closure.</p>
 	</WDCancellationItem>
@@ -34,14 +34,36 @@ import WDCancellationItem from "./WDCancellationItem.astro";
 		</p>
 	</WDCancellationItem>
 
-			<!-- Deposit Refunded -->
+	<!-- Device Sharing Closure with no balance -->
+	<WDCancellationItem label="Account closure">
+		<p>Sending warning for device sharing closure with no balance.</p>
+	</WDCancellationItem>
+	<WDCancellationItem>
+		<p>
+			Sent fraud device sharing closure with no balance SF case number <span
+				class="case-number"></span>
+		</p>
+	</WDCancellationItem>
+
+	<!-- Device Sharing Closure with balance -->
+	<WDCancellationItem label="Account closure">
+		<p>Sending warning for device sharing closure with balance.</p>
+	</WDCancellationItem>
+	<WDCancellationItem>
+		<p>
+			Sent fraud device sharing closure with balance SF case number <span
+				class="case-number"></span>
+		</p>
+	</WDCancellationItem>
+
+	<!-- Deposit Refunded -->
 	<WDCancellationItem label="Deposit refunded (not winnings)">
 		<p>Sending warning for fraud deposit refunded.</p>
 	</WDCancellationItem>
 	<WDCancellationItem>
 		<p>
-			Sent fraud deposit refunded warning - SF Case Number <span class="case-number"
-			></span>
+			Sent fraud deposit refunded warning - SF Case Number <span
+				class="case-number"></span>
 		</p>
 	</WDCancellationItem>
 
@@ -56,8 +78,6 @@ import WDCancellationItem from "./WDCancellationItem.astro";
 		</p>
 	</WDCancellationItem>
 
-
-
 	<!-- Payment method sharing -->
 	<WDCancellationItem label="Payment method sharing">
 		<p>Sending warning for payment method and device sharing</p>
@@ -69,8 +89,7 @@ import WDCancellationItem from "./WDCancellationItem.astro";
 		</p>
 	</WDCancellationItem>
 
-
-		<!-- Multi accounting -->
+	<!-- Multi accounting -->
 	<WDCancellationItem label="Multi accounting">
 		<p>Sending warning for multi accounting.</p>
 	</WDCancellationItem>
@@ -81,8 +100,6 @@ import WDCancellationItem from "./WDCancellationItem.astro";
 		</p>
 	</WDCancellationItem>
 </div>
-
-
 
 <style>
 	h4 {
