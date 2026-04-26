@@ -22,10 +22,14 @@
 		"id": "name2",
 		"display": "Name Mismatch: Subsequent Infraction",
 		"description": "If the client used a name-mismatched payment method that had already received a warning from SA before.",
-		"escalation": "[slot1]'s payment detail was used again after Sr. Agent's review",
+		"escalation": "[slot1]'s payment detail [slot2] was used again after Sr. Agent's review",
 		"additionalDesc": "Name/s In Account",
 		"slot1": {
 			"Name": 1,
+			"addMoreButton": true
+		},
+		"slot2": {
+			"Payment Method": 1,
 			"addMoreButton": true
 		}
 	},
