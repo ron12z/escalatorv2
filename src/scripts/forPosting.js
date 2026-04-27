@@ -3,6 +3,7 @@ import { getCurrentTime } from "./miscUtils";
 const eventTypes = ["keyup", "keydown", "keypress", "change", "click"];
 const choices = document.querySelectorAll(".choice");
 const resetBtn = document.querySelector("#miscReset");
+const selectAllBtn = document.querySelector("#miscSelectAll");
 const result = document.querySelector("#result");
 
 function showHideInput(choice) {
@@ -19,6 +20,15 @@ function showHideInput(choice) {
 resetBtn.addEventListener("click", () => {
 	choices.forEach((choice) => {
 		choice.classList.remove("selected");
+		choice.querySelector("input").value = "";
+		showHideInput(choice);
+		updateResult();
+	});
+});
+
+selectAllBtn.addEventListener("click", () => {
+	choices.forEach((choice) => {
+		choice.classList.add("selected");
 		choice.querySelector("input").value = "";
 		showHideInput(choice);
 		updateResult();
