@@ -84,6 +84,7 @@ _Keys Guide:_
 **Output**<br>
 <img width="1277" height="220" alt="image" src="https://github.com/user-attachments/assets/50c13b47-24d2-4540-8bd2-93448bd50264" />
 <br>
+<hr>
 
 **Example 2 - Restriction + option:**
 ```json
@@ -105,6 +106,7 @@ _Keys Guide:_
 <img width="1280" height="300" alt="image" src="https://github.com/user-attachments/assets/e4e49197-27b6-4be6-bd94-19ce6b9c35a7" />
 
 <br>
+<hr>
 
 **Example 3 - Restriction + text:**
 ```json
@@ -115,8 +117,7 @@ _Keys Guide:_
 		"escalation": "cashed out bet between deposit ([slot1]) and latest withdrawal ([slot2])",
 		"additionalDesc": "Card Details",
 		"slot1": {
-			"Deposit Payment Method": 1,
-			"addMoreButton": true
+			"Deposit Payment Method": 1
 		},
 		"slot2": {
 			"Withdrawal Payment Method": 1,
@@ -126,13 +127,13 @@ _Keys Guide:_
 ```
 
 **Output**<br>
-
+<img width="1280" height="333" alt="image" src="https://github.com/user-attachments/assets/22b44572-195a-4ec9-9f79-a7c3d9f3ff3b" />
 <br><br><br>
 
 
 <hr>
 <h1>Part 2: Update/Edit guide:</h1>
-(You have to accept the invitation to be a collaborator first)
+**0.**(You have to accept the invitation to be a collaborator first)
 
 **1.** Open the repository on your browser: https://github.com/ron12z/escalatorv2<br>
 **2.** To start editing code, press the dot/period ```.``` key on your keyboard. (If it's not working, click on any part of the page first)<br>
