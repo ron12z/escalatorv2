@@ -1,6 +1,6 @@
 [
 	{
-		"id": "name",
+		"id": "name_mismatch",
 		"display": "Name Mismatch",
 		"description": "Has 2 or more names in identity tab",
 		"escalation": "[inputCount] different names in account: [slot1]",
