@@ -265,12 +265,12 @@
 		"id": "account-status",
 		"display": "Account Status",
 		"description": "Account is suspended, closed, unverified, or requires ID verification",
-		"escalation": "account is [option]",
+		"escalation": "account [option]",
 		"additionalDesc": "Account Status",
 		"options": {
-			"Suspended": "suspended",
-			"Closed": "closed",
-			"Unverified": "unverified",
+			"Suspended": "is suspended",
+			"Closed": "is closed",
+			"Unverified": "is unverified",
 			"Requires ID Verification": "requires ID Verification"
 		}
 	},
