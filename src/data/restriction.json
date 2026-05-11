@@ -12,7 +12,7 @@
 	},
 
 	{
-		"id": "phones",
+		"id": "multiple_phones",
 		"display": "Multiple Phone Numbers",
 		"description": "Account is less then a month old AND has 2 or more phone number OR one phone number in Sift but has history of phone number change in NATS",
 		"escalation": "2 different phone numbers"
