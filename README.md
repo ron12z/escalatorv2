@@ -134,7 +134,7 @@ _Keys Guide:_
 <hr>
 <h1>Part 2: Update/Edit guide:</h1>
 
-**0.** (You have to accept the invitation to be a collaborator first)
+**0.** (You have to accept the invitation to be a collaborator first)<br>
 **1.** Open the repository on your browser: https://github.com/ron12z/escalatorv2<br>
 **2.** To start editing code, press the dot/period ```.``` key on your keyboard. (If it's not working, click on any part of the page first)<br>
 **3.1** To edit/update restrictions:<br>
