@@ -1,10 +1,62 @@
-<h1>Structure guide:</h1>
-The list of **restrictions** is just a ```.json``` file
+<h1>Part 1: Structure guide:</h1>
+
+-The list of ```restriction``` items can be found in the ```restriction.json``` file. Structure is as follows:<br>
+-Each ```restriction``` item is enclosed in curly braces ```{}```, separated by comma, with key and value pairs inside```"key" : "value"```<br>
+-All restrictions **MUST** have these 4 keys (and values): **id, display, description, escalation**
+
+_Keys Guide:_
+<table>
+  <thead>
+    <tr>
+      <th>Field Key</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>id</code></td>
+      <td>A unique identifier for the restriction item. Just put anything you want as long as it's not a duplicate of any other id</td>
+    </tr>
+    <tr>
+      <td><code>display</code></td>
+      <td>The text/label of the restriction item</td>
+    </tr>
+    <tr>
+      <td><code>description</code></td>
+      <td>A tooltip that shows when you hover over a restriction item</td>
+    </tr>
+    <tr>
+      <td><code>escalation</code></td>
+      <td>The escalation note that is added to the final template when the restriction is active</td>
+    </tr>
+  </tbody>
+</table>
+
+**Example:**
+```json
+	{
+		"id": "multiple_phones",
+		"display": "Multiple Phone Numbers",
+		"description": "Account is less then a month old AND has 2 or more phone number OR one phone number in Sift but has history of phone number change in NATS",
+		"escalation": "2 different phone numbers"
+	}
+```
+
+**Output**<br>
+_id:_ <br>Not seen on the page<br>
+
+_display_:
+<img width="452" height="288" alt="image" src="https://github.com/user-attachments/assets/acd6180c-2039-4aa1-a9f3-7945b0c59ab2" /><br>
+_description:_
+<img width="1285" height="279" alt="image" src="https://github.com/user-attachments/assets/f997ad7b-101f-4615-88e7-df39090c45fa" /><br>
+_escalation_:
+<img width="789" height="226" alt="image" src="https://github.com/user-attachments/assets/baec7283-3bb5-4c82-8979-e321d2715919" />
+
+<br><br><br>
 
 
-
-
-<h1>Update/Edit guide:</h1>
+<hr>
+<h1>Part 2: Update/Edit guide:</h1>
 (You have to accept the invitation to be a collaborator first)
 
 **1.** Open the repository on your browser: https://github.com/ron12z/escalatorv2<br>
