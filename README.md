@@ -2,7 +2,23 @@
 
 -The list of ```restriction``` items can be found in the ```restriction.json``` file. Structure is as follows:<br>
 -Each ```restriction``` item is enclosed in curly braces ```{}```, separated by comma, with key and value pairs inside```"key" : "value"```<br>
--All restrictions **MUST** have these 4 keys (and values): **id, display, description, escalation**
+-All restrictions **MUST** have these 4 keys (and values): **id, display, description, escalation**<br>
+<br>
+-There are 3 types of restriction:<br>
+<ul>
+  <li><b>Plain restriction</b> - Does not require any additional input/information. One example is the "Multiple Phone Numbers" restriction:<br>
+  <img width="434" height="216" alt="image" src="https://github.com/user-attachments/assets/fdb82fdf-71bc-4ddb-95de-4be993e6318e" />
+  </li><br>
+  <li><b>Restriction + option</b> - Required to choose one option from the defined choices. One example is the "Account Status" restriction:<br>
+  <img width="562" height="305" alt="image" src="https://github.com/user-attachments/assets/88847cfb-5fea-4ac6-b6b8-b4d18f06353d" />
+  </li><br>
+  <li><b>Restriction + text (grouped as slot1, slot2, slot3, slot4)</b> - Required to provide additional information via text inputs. One example is the "Cashed Out" restriction:<br>
+  <img width="953" height="338" alt="image" src="https://github.com/user-attachments/assets/9a0404ea-60d6-405c-a4ae-925bae1a5034" /><br>
+  <img width="961" height="333" alt="image" src="https://github.com/user-attachments/assets/a3eacdc3-a839-45aa-8743-6ed82bf5ce32" />
+
+	
+  </li>
+</ul>
 
 _Keys Guide:_
 <table>
@@ -15,7 +31,7 @@ _Keys Guide:_
   <tbody>
     <tr>
       <td><code>id</code></td>
-      <td>A unique identifier for the restriction item. Just put anything you want as long as it's not a duplicate of any other id</td>
+      <td>A unique identifier for the restriction item. Just put anything you want as long as it's not a duplicate of any other id. Not visible on the page</td>
     </tr>
     <tr>
       <td><code>display</code></td>
@@ -29,28 +45,87 @@ _Keys Guide:_
       <td><code>escalation</code></td>
       <td>The escalation note that is added to the final template when the restriction is active</td>
     </tr>
+	<tr>
+      <td><code>additionalDesc</code></td>
+      <td>Describes what additional information is needed for the restriction. This key is required if the restriction type is <b>Restriction + option</b> or <b>Restriction + text</b>. Otherwise, the options area or input area will not be visible when clicking a restriction.</td>
+    </tr>
+	<tr>
+      <td><code>slot#</code></td>
+      <td>Indicates that the restriction requires additional text input. Input fields are grouped based on slot number (eg. slot1).  It should also contain key-value pairs inside it in this format: <code>"Placeholder text" : Number of minimum input fields required</code> (eg. <code>"Card Number" : 5</code>).</td>
+    </tr>
+	<tr>
+      <td><code>addMoreButton</code></td>
+      <td>Child key of a <b>slot#</b> key. If an input slot may require more input fields (eg. May have multiple withdrawal payment methods), then this key should be added, and its value should be <b>true</b>.</td>
+    </tr>
+	<tr>
+      <td><code>hasStatusOption</code> and <code>preset</code></td>
+      <td>Child key of a <b>slot#</b> key. If the additional text field requires an Account Status beside it (See "Tableau Device Sharing" restrictions), these keys should be added like: <br><code>"hasStatusOption": true,</code><br>
+			<code>"preset": "[value] ([option])"</code><br></td>
+    </tr>
+	<tr>
+      <td><code>options</code></td>
+      <td>Indicates that the restriction requires the have one option selected. It should also contain key-value pairs inside it in this format: <code>"Option Name" : "Option value"</code> <br>(eg. <code>"Suspended": "is suspended"</code>)</td>
+    </tr>
   </tbody>
 </table>
 
-**Example:**
+<h2>Sample restriction items for visualization</h1>
+
+**Example 1 - Plain restriction:**
 ```json
 	{
 		"id": "multiple_phones",
 		"display": "Multiple Phone Numbers",
-		"description": "Account is less then a month old AND has 2 or more phone number OR one phone number in Sift but has history of phone number change in NATS",
+		"description": "Account is less than a month old AND has 2 or more phone number OR one phone number in Sift but has history of phone number change in NATS",
 		"escalation": "2 different phone numbers"
 	}
 ```
 
 **Output**<br>
-_id:_ <br>Not seen on the page<br>
+<img width="1277" height="220" alt="image" src="https://github.com/user-attachments/assets/50c13b47-24d2-4540-8bd2-93448bd50264" />
+<br>
 
-_display_:
-<img width="452" height="288" alt="image" src="https://github.com/user-attachments/assets/acd6180c-2039-4aa1-a9f3-7945b0c59ab2" /><br>
-_description:_
-<img width="1285" height="279" alt="image" src="https://github.com/user-attachments/assets/f997ad7b-101f-4615-88e7-df39090c45fa" /><br>
-_escalation_:
-<img width="789" height="226" alt="image" src="https://github.com/user-attachments/assets/baec7283-3bb5-4c82-8979-e321d2715919" />
+**Example 2 - Restriction + option:**
+```json
+	{
+		"id": "threshold",
+		"display": "Amount",
+		"description": "WD amount greater than allowed threshold ($25k for VIP, $24,999.99 for NOT VIP)",
+		"escalation": "WD greater than [option]",
+		"additionalDesc": "Account Level",
+		"options": {
+			"VIP": "$25k",
+			"Not VIP": "$24,999.99",
+			"100k": "$100k"
+		}
+	},
+```
+
+**Output**<br>
+<img width="1280" height="300" alt="image" src="https://github.com/user-attachments/assets/e4e49197-27b6-4be6-bd94-19ce6b9c35a7" />
+
+<br>
+
+**Example 3 - Restriction + text:**
+```json
+	{
+		"id": "cashout2",
+		"display": "Cashed Out",
+		"description": "Has cashed out bet between deposit and withdrawal, and the stake/settlement percentage is equal or less than 25%.",
+		"escalation": "cashed out bet between deposit ([slot1]) and latest withdrawal ([slot2])",
+		"additionalDesc": "Card Details",
+		"slot1": {
+			"Deposit Payment Method": 1,
+			"addMoreButton": true
+		},
+		"slot2": {
+			"Withdrawal Payment Method": 1,
+			"addMoreButton": true
+		}
+	}
+```
+
+**Output**<br>
 
 <br><br><br>
 
