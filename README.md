@@ -1,47 +1,40 @@
-# Astro Starter Kit: Minimal
+<h1>Update/Edit guide:</h1>
 
-```sh
-npm create astro@latest -- --template minimal
+(You have to accept the invitation to be a collaborator first)
+
+**1.** Open the repository on your browser: https://github.com/ron12z/escalatorv2<br>
+**2.** To start editing code, press the dot/period [**.**] key on your keyboard. (If it's not working, click on any part of the page first)<br>
+**3.1** To edit/update restrictions:<br>
+-Navigate to the [**restriction.json**] file (data>restriction.json), click it, then make your changes.<br>
+-When you're done editing, open the [**Source Control**] on the left side of the page<br>
+-Add a short description (or just put anything if you're feeling lazy or can't think of a description) about the changes you made, then click [**Commit & Push**]<br>
+-Wait for the updates to reflect on the page<br>
+-Done
+
+
+<br>
+
+**3.2** Optional (For update logs):<br>
+-Navigate to the [**updates.astro**] file (pages>updates.astro), click it, then make your changes.<br>
+<br>
+**Follow the format, remove square brackets:**<br>
+```astro
+<Update date="[insert date here (eg. April 27, 2026)]">
+ 	<p>[Describe your updates/changes here]</p>
+ 	<p>[One <p></p> line = one line on the page]</p>
+</Update>
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+<br>
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+_**FULL SAMPLE:**_
+```astro
+<Update date="April 27, 2026">
+	<p>Updated "Name Mismatch: Subsequent Infraction" escalation note</p>
+</Update>
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+-When you're done editing, open the [**Source Control**] on the left side of the page<br>
+-Add a short description (or just put anything if you're feeling lazy or can't think of a description) about the changes you made, then click [**Commit & Push**]<br>
+-Wait for the updates to reflect on the page<br>
+-Done<br>
