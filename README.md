@@ -7,14 +7,14 @@
 -There are 3 types of restriction:<br>
 <ul>
   <li><b>Plain restriction</b> - Does not require any additional input/information. One example is the "Multiple Phone Numbers" restriction:<br>
-  <img width="434" height="216" alt="image" src="https://github.com/user-attachments/assets/fdb82fdf-71bc-4ddb-95de-4be993e6318e" />
+  <a href="#"><img width="434" height="216" alt="image" src="https://github.com/user-attachments/assets/fdb82fdf-71bc-4ddb-95de-4be993e6318e" /></a>
   </li><br>
   <li><b>Restriction + option</b> - Required to choose one option from the defined choices. One example is the "Account Status" restriction:<br>
-  <img width="562" height="305" alt="image" src="https://github.com/user-attachments/assets/88847cfb-5fea-4ac6-b6b8-b4d18f06353d" />
+  <a href="#"><img width="562" height="305" alt="image" src="https://github.com/user-attachments/assets/88847cfb-5fea-4ac6-b6b8-b4d18f06353d" /></a>
   </li><br>
   <li><b>Restriction + text (grouped as slot1, slot2, slot3, slot4)</b> - Required to provide additional information via text inputs. One example is the "Cashed Out" restriction:<br>
-  <img width="953" height="338" alt="image" src="https://github.com/user-attachments/assets/9a0404ea-60d6-405c-a4ae-925bae1a5034" /><br>
-  <img width="961" height="333" alt="image" src="https://github.com/user-attachments/assets/a3eacdc3-a839-45aa-8743-6ed82bf5ce32" />
+  <a href="#"><img width="953" height="338" alt="image" src="https://github.com/user-attachments/assets/9a0404ea-60d6-405c-a4ae-925bae1a5034" /></a><br>
+  <a href="#"><img width="961" height="333" alt="image" src="https://github.com/user-attachments/assets/a3eacdc3-a839-45aa-8743-6ed82bf5ce32" /></a>
 
 	
   </li>
@@ -82,7 +82,7 @@ _Keys Guide:_
 ```
 
 **Output**<br>
-<img width="1277" height="220" alt="image" src="https://github.com/user-attachments/assets/50c13b47-24d2-4540-8bd2-93448bd50264" />
+<a href="#"><img width="1277" height="220" alt="image" src="https://github.com/user-attachments/assets/50c13b47-24d2-4540-8bd2-93448bd50264" /></a>
 <br>
 <hr>
 
@@ -103,7 +103,7 @@ _Keys Guide:_
 ```
 
 **Output**<br>
-<img width="1280" height="300" alt="image" src="https://github.com/user-attachments/assets/e4e49197-27b6-4be6-bd94-19ce6b9c35a7" />
+<a href="#"><img width="1280" height="300" alt="image" src="https://github.com/user-attachments/assets/e4e49197-27b6-4be6-bd94-19ce6b9c35a7" /></a>
 
 <br>
 <hr>
@@ -127,7 +127,7 @@ _Keys Guide:_
 ```
 
 **Output**<br>
-<img width="1280" height="333" alt="image" src="https://github.com/user-attachments/assets/22b44572-195a-4ec9-9f79-a7c3d9f3ff3b" />
+<a href="#"><img width="1280" height="333" alt="image" src="https://github.com/user-attachments/assets/22b44572-195a-4ec9-9f79-a7c3d9f3ff3b" /></a>
 <br><br><br>
 
 
@@ -139,11 +139,11 @@ _Keys Guide:_
 **2.** To start editing code, press the dot/period ```.``` key on your keyboard. (If it's not working, click on any part of the page first)<br>
 **3.1** To edit/update restrictions:<br>
 -Navigate to the ```restriction.json``` file (data>restriction.json), click it, then make your changes.<br>
-<img width="353" height="194" alt="image" src="https://github.com/user-attachments/assets/5c138795-4480-4bca-be88-920358927439" />
+<a href="#"><img width="353" height="194" alt="image" src="https://github.com/user-attachments/assets/5c138795-4480-4bca-be88-920358927439" /></a>
 
 -When you're done editing, open the ```Source Control``` on the left side of the page<br>
 -Add a short description (or just put anything if you're feeling lazy or can't think of a description) about the changes you made, then click ```Commit & Push```<br>
-<img width="349" height="183" alt="image" src="https://github.com/user-attachments/assets/47546911-36bb-48b5-9f2d-775c24241cae" />
+<a href="#"><img width="349" height="183" alt="image" src="https://github.com/user-attachments/assets/47546911-36bb-48b5-9f2d-775c24241cae" /></a>
 -Wait for the updates to reflect on the page (Escalator)<br>
 -Done. You may now close github or proceed to log your changes.
 
@@ -152,7 +152,7 @@ _Keys Guide:_
 
 **3.2** Log Changes/Updates Made (Optional, but recommended):<br>
 -Navigate to the ```updates.astro``` file (pages>updates.astro), click it, then make your changes.<br>
-<img width="351" height="402" alt="image" src="https://github.com/user-attachments/assets/23dbdfd8-b0f3-4673-8a91-146b5bbc2451" />
+<a href="#"><img width="351" height="402" alt="image" src="https://github.com/user-attachments/assets/23dbdfd8-b0f3-4673-8a91-146b5bbc2451" /></a>
 
 (Add this code above the most recent [```<Update>```] tag),
 **follow the format when editing, remove square brackets:**<br>
@@ -172,12 +172,12 @@ _**FULL SAMPLE:**_
 </Update>
 ```
 **Code above will make:**
-<img width="597" height="93" alt="image" src="https://github.com/user-attachments/assets/437dc8f6-eb22-4b6a-8795-825bc40c11bd" />
+<a href="#"><img width="597" height="93" alt="image" src="https://github.com/user-attachments/assets/437dc8f6-eb22-4b6a-8795-825bc40c11bd" /></a>
 
 
 -When you're done editing, open the ```Source Control``` on the left side of the page<br>
 -Add a short description (or just put anything if you're feeling lazy or can't think of a description) about the changes you made, then click ```Commit & Push```<br>
-<img width="344" height="179" alt="image" src="https://github.com/user-attachments/assets/cbba0044-c1cd-47af-b5ab-3f99fb47aec8" />
+<a href="#"><img width="344" height="179" alt="image" src="https://github.com/user-attachments/assets/cbba0044-c1cd-47af-b5ab-3f99fb47aec8" /></a>
 
 -Wait for the updates to reflect on the page (Escalator)<br>
 -Done. You can now close github.
