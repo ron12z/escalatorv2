@@ -170,16 +170,16 @@
 	},
 
 	{
-		"id": "Promo Abuse",
-		"display": "Promo Abuse",
-		"description": "APPLIES ONLY IN MI, LA, CO, OH, and WV: If the client has a withdrawal request have the following criteria: Account is ≤ 30 days old (First Seen),  Not ID Verified, With “Bet $20, Get $200” promotion, No other activity aside from maximizing the free bet before withdrawal, Email format is no longer a factor",
+		"id": "Promo Abusers",
+		"display": "Promo Abuse - Applies ONLY in MI, LA, CO, OH",
+		"description": "If the client has a withdrawal request have the following criteria: Account is ≤ 30 days old (First Seen),  Not ID Verified, With “Bet $20, Get $200” promotion, No other activity aside from maximizing the free bet before withdrawal, Email format is no longer a factor",
 		"escalation": "Promo abuse"
 	},
 
 
 	{
-		"id": "Casino Abuse",
-		"display": "Casino Abuse",
+		"id": "Casino Abusers",
+		"display": "Casino Abuse - Applies to MI, PA, WV",
 		"description": "Account is ≤ 30 days old (First Seen), Not ID Verified, Deposit ONLY $10, then proceed to withdraw, Same stake and settlement amounts (commonly seen in Baccarat or Roulette, Client received Casino Credit Awarded, Applicable to Michigan (MI) state/withdrawal operator",
 		"escalation": "Casino Abuse"
 	},
