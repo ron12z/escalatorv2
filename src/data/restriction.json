@@ -170,6 +170,38 @@
 	},
 
 	{
+		"id": "Promo Abuse",
+		"display": "Promo Abuse",
+		"description": "APPLIES ONLY IN MI, LA, CO, OH, and WV: If the client has a withdrawal request have the following criteria: Account is ≤ 30 days old (First Seen),  Not ID Verified, With “Bet $20, Get $200” promotion, No other activity aside from maximizing the free bet before withdrawal, Email format is no longer a factor",
+		"escalation": "Promo abuse"
+	},
+
+
+	{
+		"id": "Casino Abuse",
+		"display": "Casino Abuse",
+		"description": "Account is ≤ 30 days old (First Seen), Not ID Verified, Deposit ONLY $10, then proceed to withdraw, Same stake and settlement amounts (commonly seen in Baccarat or Roulette, Client received Casino Credit Awarded, Applicable to Michigan (MI) state/withdrawal operator",
+		"escalation": "Casino Abuse"
+	},
+
+
+	{
+		"id": "Fraud Syndicate",
+		"display": "Fraud Syndicate (LA, CO, MI Withdrawal Operator ONLY)",
+		"description": "Criteria: The client is 30 days old, Not ID Verified, Regardless of the Deposit and withdrawal used, Client made a $10 deposit and made a stake on short odds 1.00 - 1.14, The client is using different domains",
+		"escalation": "Email domain + Short odds possible for forming group"
+	},
+
+
+	{
+		"id": "Hall of Shame",
+		"display": "Hall of Shame",
+		"description": "For clients with EXACLTY the same first name, last name and - DOB REGARDLESS of State/Location/Activity/Queue",
+		"escalation": "client matches details on the Hall of Shame list"
+	},
+
+
+	{
 		"id": "tableau-active",
 		"display": "Tableau Device Sharing: 50% and above",
 		"description": "If Shared Device Last GeoLocation Date is more recent vs. Last Manual Withdrawal Date/Time (or Last Manual Withdrawal Date/Time is NULL) and Percentage for last and third columns are both equal or above 50% (Active, Suspended, Closed, TimeOut, Requires ID Verification)",
