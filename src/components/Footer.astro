@@ -5,13 +5,8 @@ import Rickroll from "../files/haha.gif";
 ---
 
 <footer>
-	<p>Created by @aarontalua</p>
-	<slot>
-		<p>
-			For suggestions/corrections/feedback, please inform TL Chaddy or me
-			(aaron.talua.xc) via Google Chat/Slack 🙂
-		</p>
-	</slot>
+	<p>Created by <span class="contributor_names">Ron</span></p>
+	<p>Maintained by <span class="contributor_names">Angel</span></p>
 	<p>
 		Feeling curious? ➡ <span id="show-QR" class="select-none">Click me!</span>
 	</p>
@@ -42,6 +37,11 @@ import Rickroll from "../files/haha.gif";
 	#show-QR {
 		cursor: pointer;
 		color: rgb(172, 179, 255);
+	}
+
+	.contributor_names {
+		font-weight: bold;
+		color: rgb(94 205 233);
 	}
 	.donate-info {
 		flex-direction: column;
